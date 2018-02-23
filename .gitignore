@@ -7,8 +7,11 @@ wp-content/blogs.dir/
 wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
+wp-content/plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+wp-content/themes/sterling-ranch_1C/assets/scss/.sass-cache/
+wp-content/themes/sterling-ranch_1C/assets/video/
 
 /.htaccess
 /license.txt
@@ -16,3 +19,32 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+
+/bower_components/
+/wp-includes
+/wp-admin
+
+/wp-content/uploads
+/wp-content/upgrade
+
+
+/bower.json
+/config.codekit
+/config.codekit3
+/index.php
+/license.txt
+/readme.html
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-config-sample.php
+/wp-config.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
