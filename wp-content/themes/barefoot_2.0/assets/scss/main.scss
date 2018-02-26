@@ -1,0 +1,98 @@
+@import 'design';
+
+/*** BASICS ***/
+body { 
+	
+}
+
+.nopadding { padding: 0 !important; }
+
+/*** NAVIGATION / HEADER ***/
+.navbar-default { min-height: 90px; 
+	.navbar-left {
+		img { padding: 15px 0; }
+	}
+	.navbar-nav { margin-top: 15px;
+		li {
+			a { padding: 23px 30px 22px; cursor: pointer; 
+				&:focus {  }
+				&:hover { color: $lightblue; }
+				.fa { font-size: 0.7em; position: relative; bottom: 3px; }
+			}
+			&.last {
+				a { color: $lightblue; }
+			}
+			&.active {
+				a { color: $lightblue !important; background: none; }
+			}
+			&.current-menu-parent { 
+				a { color: $lightblue; }
+			}
+		}
+		.open {
+			a:hover    { color: $lightblue; }
+		}
+		.dropdown-menu { top: 79px; }
+	}
+}
+
+/*** HOMEPAGE BUILDERS ***/
+.homepage-builders { padding: 20px 0; 
+	.builder { text-align: left; 
+		.aligncenter { margin-bottom: 15px; }
+		h1 { font-size: 1.3em; margin: 0; }
+		p { margin-bottom: 5px;
+			strong { font-weight: normal; text-transform: uppercase; font-family: 'brandon-regular', sans-serif; }
+			em { font-family: 'brandon-bold', sans-serif; color: $lightgray; text-transform: uppercase; font-style: normal; }
+		}
+		a { color: $darkgray; text-transform: uppercase; font-family: 'brandon-bold', sans-serif; font-size: 0.9em; 
+			.blue-txt { color: $lightblue; }
+			&:hover   { color: $lightgray; }
+		}
+	}
+}
+
+/*** HOMEPAGE PROMOTIONS ***/
+.homepage-promos { position: relative;
+	.carousel-controls { position: absolute; top: 88%; width: 100%; height: 60px; text-align: center;
+		.carousel-control { width: 5%; background: none;
+			&.left  { left: 45%; }
+			&.right { right: 45%; }
+		}
+	}
+	.carousel-caption { width: 38%; bottom: 0;
+		&.left  { text-align: left; right: auto; left: 2.5%; }
+		&.right { text-align: right; right: 2.5%; left: auto; }
+		.promo-title { font-family: 'dense-regular', sans-serif; font-size: 7.5em; margin: 0 0 12px; }
+	}
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/* Tablets (iPad Landscape) */
+@media only screen and (max-width : 1024px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 667px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
