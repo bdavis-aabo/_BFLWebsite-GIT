@@ -10,14 +10,14 @@
 			<?php while($_promos->have_posts()): $_promos->the_post() ?>
 		    	<div class="item <?php if($_i == 0): echo 'active'; endif; ?>">
 					<?php echo get_the_post_thumbnail($post->ID, 'full', array('class' => 'img-responsive')); ?>
-					<div class="carousel-caption <?php echo get_field('promo_alignment') ?>">
+					<div class="carousel-caption <?php echo get_field('promo_alignment') . ' ' . get_field('promo_theme') ?>">
 						<h1 class="promo-title"><?php the_title() ?></h1>
 						<?php echo get_field('promo_summary') ?>
 						<a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
 							<i class="fa fa-chevron-right blue-txt"></i> View Offer Details</a>
 							
 						<div class="promo-btns">
-							<a href="<?php bloginfo('url') ?>/the-homes/quick-move-in-homes" title="<?php bloginfo('name') ?> - Quick Move-In Homes" class="btn white-btn">Available Homes</a>
+							<a href="<?php bloginfo('url') ?>/the-homes/quick-move-in-homes" title="<?php bloginfo('name') ?> - Quick Move-In Homes" class="btn default-btn">Available Homes</a>
 							<button class="btn outline-btn">Request Information</button>
 						</div>
 					</div>

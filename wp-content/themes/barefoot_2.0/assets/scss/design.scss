@@ -1,8 +1,12 @@
+@import 'bourbon/bourbon';
 /*** 
 	BFL2.0 DESIGN ELEMENTS 
 
 	- Colors
 ***/
+
+/* Fonts */
+@include font-face('brandon-medium', '../fonts/brandon-medium/BrandonText-Medium');
 
 /* Colors */
 $lightblue:		#66cce8;
@@ -11,8 +15,19 @@ $green:			#269574;
 $brown:			#504a40;
 $orange:		#f68b20;
 $red:			#c51e24;
+$ltgray:		#b7b7b7;
 $lightgray:		#abb1b3;
 $darkgray:		#53585a;
 $red:			#e21e24;
 $white:			#ffffff;
 $black:			#000000;
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 { font-family: 'brandon-medium', sans-serif; }
+
+/* Backgrounds */
+.gray-bg { background: $ltgray; color: $white; }
+
+/* Buttons */
+.blue-btn { background: $lightblue; color: $white; }
+.blue-btn:hover { background: $darkblue; color: $white; }

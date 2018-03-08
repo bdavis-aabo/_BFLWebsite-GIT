@@ -20,6 +20,9 @@ if (function_exists('add_theme_support'))
     add_image_size('large', 700, '', true);  			// Large Thumbnail
     add_image_size('medium', 250, '', true); 			// Medium Thumbnail
     add_image_size('small', 125, '', true);  			// Small Thumbnail
+    add_image_size('model-thumb', 120, 100, true);		// Model Thumbnail
+    add_image_size('builder-thumb', 450, '', true);	// Builder Thumbnail
+    add_image_size('builder-logo', 350, '', true);
     
     // Enables post and comment RSS feed links to head
     add_theme_support('automatic-feed-links');
