@@ -13,12 +13,13 @@
 					<div class="carousel-caption <?php echo get_field('promo_alignment') . ' ' . get_field('promo_theme') ?>">
 						<h1 class="promo-title"><?php the_title() ?></h1>
 						<?php echo get_field('promo_summary') ?>
-						<a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
-							<i class="fa fa-chevron-right blue-txt"></i> View Offer Details</a>
+						
+						<a href="/special-offers" title="<?php the_title() ?>">
+							<i class="fa fa-chevron-right blue-txt"></i> View Special Offers</a>
 							
 						<div class="promo-btns">
 							<a href="<?php bloginfo('url') ?>/the-homes/quick-move-in-homes" title="<?php bloginfo('name') ?> - Quick Move-In Homes" class="btn default-btn">Available Homes</a>
-							<button class="btn outline-btn">Request Information</button>
+							<button type="button" class="btn outline-btn" data-toggle="modal" id="#<?php echo get_field('promo_builder') . '-btn' ?>" data-target="#promoModal">Request Information</button>
 						</div>
 					</div>
 		    	</div>
@@ -38,6 +39,8 @@
 			</div>
 		</div>
 		
+		<?php get_template_part('homes/builder-lightbox') ?>
 	</section>
 	
 <?php wp_reset_query() ?>
+

@@ -1,5 +1,5 @@
 <?php $_models = get_field('homebuilder_models'); ?>
-<div class="homebuilder-models col-md-8 col-sm-7">
+<div class="homebuilder-models col-md-8 col-sm-12">
 	<div id="model-carousel" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner" role="listbox">
 			<?php $_s = 0; foreach($_models as $_model): ?>

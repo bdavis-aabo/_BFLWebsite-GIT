@@ -28,6 +28,41 @@ h1,h2,h3,h4,h5,h6 { font-family: 'brandon-medium', sans-serif; }
 /* Backgrounds */
 .gray-bg { background: $ltgray; color: $white; }
 
+/* Text Colors */
+.blue-txt 	{ color: $lightblue; }
+.orange-txt { color: $orange; }
+.red-txt    { color: $red; }
+.green-txt  { color: $green; }
+
 /* Buttons */
 .blue-btn { background: $lightblue; color: $white; }
 .blue-btn:hover { background: $darkblue; color: $white; }
+
+.normal-btn { color: $darkgray; font-family: 'brandon-regular', sans-serif; padding: 0 0; text-transform: uppercase; font-size: 0.9em;
+	.fa { color: $lightblue; position: relative; top: -1px; font-size: 0.8em; }
+	&:hover { color: $lightgray; }
+}
+
+button { background: none; border: none; 
+	&:focus { outline: none !important; outline-color: transparent !important; outline-offset: 0 !important; }
+}
+
+.sliding-btn { text-transform: uppercase; font-size: 1.1em; font-family: 'brandon-regular', sans-serif; text-align: center; padding: 12px 25px; 
+	position: fixed; bottom: 0; right: -275px; color: $white; background: hsla(231,5%,5%,0.85); transition: background 0.2s ease 0.2s;
+	.fa { color: $lightblue; padding-right: 12px; }
+	&:focus { outline: 0; }
+	&:hover { background: hsla(231, 5%, 5%, 1)}
+	}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus { border: 1px solid $lightgray; -webkit-text-fill-color: $darkgray; -webkit-box-shadow: 0 0 3px 0 $lightgray inset; transition: background-color 5000s ease-in-out 0s;
+}

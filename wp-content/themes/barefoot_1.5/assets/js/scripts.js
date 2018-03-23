@@ -27,7 +27,6 @@ $(document).ready(function(){
 	// Scrollspy
 	$('body').scrollspy({ offset : 60 });
 	
-	
 	jQuery('input[name="builder[]"]').change(function(){
 		var emailTo = [];
 		var builder = [];
@@ -59,7 +58,7 @@ $(document).ready(function(){
 	});
 	
 	var winH = $(window).height();
-	var winW = $(window).width();
+	//var winW = $(window).width();
 	var scrollBtnW = $('.scrollBtn').width();
 	var scrollDiff = (winW - scrollBtnW)/2;
 	

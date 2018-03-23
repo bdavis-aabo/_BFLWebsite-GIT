@@ -13,7 +13,7 @@
 					if($_quickMoves->have_posts()): while($_quickMoves->have_posts()): $_quickMoves->the_post();
 					$_homeImage = get_field('qmi_image');
 				?>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-6 ">
 						<div class="builder-home">
 							<img src="<?php echo $_homeImage['url'] ?>" class="img-responsive aligncenter" />
 							<strong><?php echo get_field('qmi_floorplan') ?></strong><br />

@@ -2,14 +2,6 @@
 	/* Template Name: Builder Page */ 
 	$_builders = new WP_Query();
 	$_builders->query('post_type=home_builders&pagename=' . $post->post_name . '&post_status=publish&order=ASC&orderby=menu_order');
-
-/*
-
-	if(is_page('brookfield-residential-avenue-portfolio') || is_page('brookfield-residential-harvest-portfolio')): 
-		$_portfolio = str_replace('Brookfield Residential - ', '', $post->post_title);
-		$_builder = 'Brookfield Residential';
-	endif;
-*/
 ?>
 
 <?php get_header() ?>
@@ -17,7 +9,7 @@
 		<?php if($_builders->have_posts()): while($_builders->have_posts()): $_builders->the_post(); $_heroSlides = get_field('homebuilder_slides'); ?>
 		<section class="page-hero">
 			<?php if($_heroSlides): ?>
-				<div id="builder-carousel" class="carousel slide carousel-fade" data-interval="false" data-ride="carousel">
+				<div id="builder-carousel" class="carousel slide carousel-fade" data-interval="9500" data-ride="carousel">
 					<div class="carousel-inner" role="listbox">
 					<?php $_i = 0; foreach($_heroSlides as $_slide): ?>
 				    	<div class="item <?php if($_i == 0): echo 'active'; endif; ?>">
@@ -37,7 +29,7 @@
 							<h2 class="hero-title">
 								<?php 
 								if(is_page('brookfield-residential-avenue-portfolio') || is_page('brookfield-residential-harvest-portfolio')): 
-									echo $_builder;
+									echo 'Brookfield Residential';
 								else:
 									the_title();
 								endif;
@@ -72,7 +64,7 @@
 				<?php if($_builders->have_posts()): while($_builders->have_posts()): $_builders->the_post() ?>	
 					<?php get_template_part('builder/builder-models') ?>
 					
-					<div class="col-md-4 col-sm-5">
+					<div class="col-md-4 col-sm-8 col-md-offset-0 col-sm-offset-2 col-xs-offset-0">
 						<div class="homebuilder-sidebar">
 							<?php 
 								$_logo = get_field('homebuilder_logo'); 
@@ -81,9 +73,6 @@
 								$w = $_logo['sizes'][$_size . '-width'];
 								$h = $_logo['sizes'][$_size . '-height'];	
 							?>
-							
-							<?php //var_dump(wp_get_attachment_image($_logo, $_size)); var_dump($_logo) ?>
-							
 							
 							<img src="<?php echo $_logo['url'] ?>" alt="<?php the_title() ?>" width="<?php echo $w ?>" class="aligncenter img-responsive" />
 							<p class="blue-txt">Visit the <?php if($_builder != ''): echo $_builder; else: the_title(); endif; ?> sales office for more information and tour the models.</p>
@@ -98,6 +87,7 @@
 									<i class="fa fa-chevron-right"></i> Go To <?php if($_portfolio != ''): echo $_portfolio; else: the_title(); endif; ?>
 								</a>
 							<?php endif; ?>
+<!-- 								<button class="builder-btn"><i class="fa fa-chevron-right"></i> request information</button> -->
 						</div>
 					</div>
 				<?php endwhile; endif; ?>

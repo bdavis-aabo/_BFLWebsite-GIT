@@ -34,7 +34,7 @@
 		<section class="homebuilder-section ">
 			<div class="container">
 				<div class="row">
-					<div class="pathfinder-form col-md-8 col-sm-7">
+					<div class="pathfinder-form builder-form col-md-8 col-sm-7">
 						<?php if(is_page('realtor-pre-grand-opening-rsvp')): ?>
 							<?php echo do_shortcode('[contact-form-7 id="96" title="Realtor Email Form"]') ?>
 						<?php elseif(is_page('become-a-pathfinder')): ?>
