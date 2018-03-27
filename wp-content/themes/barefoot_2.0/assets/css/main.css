@@ -252,14 +252,6 @@ select:-webkit-autofill:focus {
         .homepage-promos .carousel-caption .promo-btns .btn:hover {
           opacity: 0.5; }
 
-.modal {
-  background: rgba(0, 0, 0, 0.5); }
-  .modal .modal-dialog {
-    top: 10%; }
-    .modal .modal-dialog .modal-header h4 {
-      color: #66cce8;
-      text-align: left; }
-
 .builder-form {
   border: none;
   margin: 0;
@@ -595,6 +587,43 @@ select:-webkit-autofill:focus {
         .page-events .event .event-details .event-btn:hover {
           color: #abb1b3; }
 
+.offer-grid .offer-row {
+  margin-bottom: 40px; }
+
+.offer-grid .offer-graphic {
+  position: relative; }
+  .offer-grid .offer-graphic .offer-title {
+    position: absolute;
+    font-family: 'dense', sans-serif;
+    font-size: 2.2em;
+    bottom: 10px;
+    margin: 0; }
+  .offer-grid .offer-graphic.right {
+    text-align: right; }
+    .offer-grid .offer-graphic.right .offer-title {
+      right: 10px; }
+  .offer-grid .offer-graphic.left {
+    text-align: left; }
+    .offer-grid .offer-graphic.left .offer-title {
+      left: 10px; }
+  .offer-grid .offer-graphic.light {
+    color: #ffffff; }
+  .offer-grid .offer-graphic.dark {
+    color: #53585a; }
+
+.offer-grid .offer-details .offer-title {
+  color: #66cce8;
+  font-size: 1.5em; }
+
+.offer-grid .offer-details .builder-btn {
+  color: #53585a;
+  font-family: 'brandon-regular', sans-serif;
+  font-size: 1em;
+  padding-left: 0; }
+  .offer-grid .offer-details .builder-btn .fa {
+    font-size: 0.8em;
+    color: #66cce8; }
+
 .pathfinder-form form .form-group label {
   font-family: 'brandon-regular', sans-serif;
   font-size: 0.9em;
@@ -734,6 +763,15 @@ select:-webkit-autofill:focus {
         color: #53585a; }
         .footer .footer-right .footer-social li a:hover {
           color: #abb1b3; }
+
+/*** MODAL STYLES ***/
+.modal {
+  background: rgba(0, 0, 0, 0.5); }
+  .modal .modal-dialog {
+    top: 10%; }
+    .modal .modal-dialog .modal-header h4 {
+      color: #66cce8;
+      text-align: left; }
 
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
