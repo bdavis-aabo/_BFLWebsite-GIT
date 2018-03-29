@@ -80,7 +80,7 @@
 							<span class="hours"><span class="blue-txt">SALES OFFICE HOURS</span><br /><?php echo get_field('homebuilder_hours') ?></span>
 							<p class="pricing">
 								<?php if($_portfolio != ''): echo $_portfolio; endif; ?><br />
-								Starting <?php echo get_field('homebuilder_pricing') ?></p>
+								<?php echo get_field('homebuilder_pricing') ?></p>
 							
 							<?php if(get_field('homebuilder_link')): ?>
 								<a href="<?php echo get_field('homebuilder_link') ?>" class="builder-btn" title="<?php the_title() ?>" target="_blank" onclick="ga('send','event', 'Builder Page', 'click', '<?php the_title() ?>');">

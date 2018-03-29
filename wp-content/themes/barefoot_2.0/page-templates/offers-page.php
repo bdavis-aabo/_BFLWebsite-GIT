@@ -46,7 +46,7 @@
 				<div class="col-md-5">
 					<div class="offer-details">
 						<h2 class="offer-title"><?php the_title() ?></h2>
-						<?php echo get_field('promo_summary') ?>
+						<?php the_content() ?>
 						
 						<?php if($_builderLabel['value'] != 'barefoot-lakes'): ?>
 							<a href="" class="builder-btn btn" title="<?php ?>"><i class="fa fa-chevron-right"></i> Visit <?php echo $_builderLabel['label'] ?></a>

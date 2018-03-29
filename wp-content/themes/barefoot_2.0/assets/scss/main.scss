@@ -291,7 +291,7 @@ body {
 		&.dark	{ color: $darkgray; }
 	}
 	.offer-details { 
-		.offer-title { color: $lightblue; font-size: 1.5em; }
+		.offer-title { color: $lightblue; font-size: 1.5em; margin-top: 10px; }
 		.builder-btn { color: $darkgray; font-family: 'brandon-regular', sans-serif; font-size: 1em; padding-left: 0;
 			.fa { font-size: 0.8em; color: $lightblue; }
 		}

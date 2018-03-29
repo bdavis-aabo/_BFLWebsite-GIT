@@ -54,9 +54,32 @@
 				<div class="row">
 				<?php if(count($_children) > 0): ?>
 					<?php if($_childPages->have_posts()): while($_childPages->have_posts()): $_childPages->the_post() ?>
-					<div class="col-md-4">
-						<article class="explore-section">
-							<?php echo get_the_post_thumbnail($post->ID, 'full', array('class' => 'img-responsive aligncenter')); ?>
+					
+						<?php if($post->post_name != 'the-field-guide'): ?>
+						<div class="col-md-4">
+							<article class="explore-section">
+							<?php if($post->post_name == 'peninsula-park'): ?>
+								<button type="button" data-toggle="modal" data-target="#peninsula-video-modal">
+									<?php echo get_the_post_thumbnail($post->ID, 'full', array('class' => 'img-responsive aligncenter')); ?>
+								</button>
+								<div class="modal fade" id="peninsula-video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+								    	<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+												<h4 class="modal-title" id="myModalLabel">Peninsula Park</h4>
+								    		</div>
+											<div class="modal-body">
+												<div class="embed-responsive embed-responsive-16by9">
+													<iframe width="720" height="405" src="https://www.youtube.com/embed/TzSkHC6G0fo?rel=0" frameborder="0" gesture="media" allowfullscreen class="embed-responsive-item"></iframe>
+												</div>
+								    		</div>
+										</div>
+									</div>
+								</div>
+							<?php else: 
+								echo get_the_post_thumbnail($post->ID, 'full', array('class' => 'img-responsive aligncenter')); 
+							endif; ?>
 							
 							<h2 class="explore-title"><?php the_title() ?></h2>
 							<?php the_content() ?>
@@ -83,39 +106,51 @@
 							</div>
 							<?php endif; ?>
 						</article>
-					</div>
+						</div>
+						<?php else: ?>
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3">
+								<article class="explore-field-guide">
+									<?php echo get_the_post_thumbnail($post->ID, 'full', array('class' => 'img-responsive aligncenter')); ?>
+									<h2 class="explore-title"><?php the_title() ?></h2>
+									
+									<?php the_content() ?>
+									
+									<button type="button" class="btn normal-btn" data-toggle="modal" data-target="#field-guide">
+										<i class="fa fa-chevron-right"></i> View Community Field Guide
+									</button>		
+								</article>
+								
+								<!-- Modal -->
+								<div class="modal fade" id="field-guide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+								    	<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+												<h4 class="modal-title" id="myModalLabel">Barefoot Lakes - Field Guide</h4>
+								    		</div>
+											<div class="modal-body">
+												<div data-configid="15757478/59483615" style="width:100%; height:650px;" class="issuuembed"></div>
+												<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+								    		</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<?php endif; ?>
+					
+					
+					
+					
+					
+					
 					<?php endwhile; endif; wp_reset_query(); ?>
 				
 				<?php endif; ?>	
 				</div>
 				
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<article class="explore-field-guide">
-							<img src="<?php bloginfo('stylesheet_directory') ?>/assets/images/field-guide.jpg" class="img-responsive aligncenter" />
-							<button type="button" class="btn normal-btn" data-toggle="modal" data-target="#field-guide">
-								<i class="fa fa-chevron-right"></i> View Community Field Guide
-							</button>		
-						</article>
-						
-						<!-- Modal -->
-						<div class="modal fade" id="field-guide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-							<div class="modal-dialog" role="document">
-						    	<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-										<h4 class="modal-title" id="myModalLabel">Barefoot Lakes - Field Guide</h4>
-						    		</div>
-									<div class="modal-body">
-										<div data-configid="15757478/59483615" style="width:100%; height:650px;" class="issuuembed"></div>
-										<script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
-						    		</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
+				
 			</div>
 			
 		</section>

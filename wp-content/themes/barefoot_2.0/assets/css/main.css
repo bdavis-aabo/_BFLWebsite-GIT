@@ -613,7 +613,8 @@ select:-webkit-autofill:focus {
 
 .offer-grid .offer-details .offer-title {
   color: #66cce8;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin-top: 10px; }
 
 .offer-grid .offer-details .builder-btn {
   color: #53585a;
