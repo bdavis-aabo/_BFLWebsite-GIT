@@ -26,6 +26,7 @@
 		    <?php $_i++; endwhile; ?>
 			</div>
 		
+			<?php if($_promos->found_posts > 1): ?>
 			<!-- Controls -->
 			<div class="carousel-controls">
 				<a class="left carousel-control" href="#promo-carousel" role="button" data-slide="prev">
@@ -37,6 +38,7 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
+			<?php endif; ?>
 		</div>
 		
 		<?php get_template_part('homes/builder-lightbox') ?>
