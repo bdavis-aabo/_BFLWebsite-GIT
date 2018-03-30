@@ -50,7 +50,7 @@
 								</div>
 							</div>
 						<?php elseif(is_page('become-a-pathfinder')): ?>
-							<img src="<?php bloginfo('template_directory') ?>/assets/images/barefootlakes-map.jpg" alt="<?php the_title() ?>" class="img-responsive aligncenter" />
+							<img src="<?php bloginfo('template_directory') ?>/assets/images/barefootlakes-map.jpg" alt="<?php the_title() ?>" class="img-responsive alignright" />
 							<div class="message-group">
 								<p>From I-25 take Exit #240 (CO-119) east then make an immediate left on I-25 Frontage Road East (County Road 9 ½).
 									Travel north one mile to Barefoot Lakes Parkway and turn right.

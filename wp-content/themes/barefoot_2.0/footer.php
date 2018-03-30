@@ -31,7 +31,7 @@
 							<a href="<?php bloginfo('url') ?>" title="<?php bloginfo('name') ?>">
 								<img src="<?php bloginfo('stylesheet_directory') ?>/assets/images/barefoot-footerlogo.jpg" alt="<?php bloginfo('name') ?>" class="img-responsive alignright" />
 							</a>
-							<p class="directions">Situated perfectly between Denver and Loveland just east of I-25 exit #240<br />next to two charming lakes and the St. Vrain River</p>
+							<p class="directions">Find us 15 minutes east of Longmont just north of Erie and 30 minutes from downtown Denver,<br/>with immediate access to I-25 at Exit #240.</p>
 							<p class="copyright">
 								<img src="<?php bloginfo('stylesheet_directory') ?>/assets/images/ehologo-white.jpg" alt="Equal Housing Opportunity" class="alignright" />
 								Pricing product specifications, amenities and landscaping are subject to change without prior notice.<br />
@@ -66,7 +66,7 @@
 			$_slug = $_parent->post_name;
 		?>
 
-		<?php if(is_page('the-homes') || $_slug == 'the-homes'): ?>
+		<?php if(!is_page('become-a-pathfinder') && !is_front_page()): ?>
 			<button type="button" class="sliding-btn" data-toggle="modal" data-target="#promoModal"><i class="fa fa-envelope"></i> request information</button>
 			
 			<?php get_template_part('homes/builder-lightbox') ?>

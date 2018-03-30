@@ -483,7 +483,7 @@ select:-webkit-autofill:focus {
   text-align: left; }
 
 .page-contents a {
-  color: #53585a;
+  color: #66cce8;
   text-transform: uppercase;
   font-size: 1em; }
   .page-contents a .fa {
@@ -692,8 +692,7 @@ select:-webkit-autofill:focus {
     line-height: 1.4em; }
   .explore-sections .explore-section a,
   .explore-sections .explore-field-guide a {
-    text-transform: uppercase;
-    color: #53585a; }
+    color: #66cce8 !important; }
     .explore-sections .explore-section a .fa,
     .explore-sections .explore-field-guide a .fa {
       color: #66cce8; }
@@ -821,7 +820,12 @@ select:-webkit-autofill:focus {
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    /*
+			a { text-transform: uppercase; color: $darkgray; 
+				.fa { color: $lightblue; }
+			}
+*/ }
     .explore-sections .explore-section .explore-title,
     .explore-sections .explore-field-guide .explore-title {
       font-size: 1.1em;
@@ -830,13 +834,6 @@ select:-webkit-autofill:focus {
     .explore-sections .explore-field-guide p {
       font-size: .9em;
       line-height: 1.4em; }
-    .explore-sections .explore-section a,
-    .explore-sections .explore-field-guide a {
-      text-transform: uppercase;
-      color: #53585a; }
-      .explore-sections .explore-section a .fa,
-      .explore-sections .explore-field-guide a .fa {
-        color: #66cce8; }
   .explore-sections .explore-field-guide a {
     font-size: .9em; } }
 

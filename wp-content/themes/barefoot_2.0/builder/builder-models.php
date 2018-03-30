@@ -24,22 +24,4 @@
 		<?php $_i++; endforeach; ?>
 		</ol>
 	</div>
-	
-	
-	
-	
-	<?php foreach($_models as $_model): ?>
-	
-<!--
-	<div class="col-md-6 homebuilder-model">
-		<div class="model">
-			<div class="model-image">
-				<img src="<?php echo $_model['url'] ?>" class="aligncenter img-responsive" />
-				<div class="model-caption"><?php echo $_model['title'] ?></div>
-			</div>
-			<div class="model-details"><?php echo $_model['description'] ?></div>
-		</div>
-	</div>
--->
-	<?php endforeach; ?>
 </div>

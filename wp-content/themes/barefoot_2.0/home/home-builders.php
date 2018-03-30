@@ -13,7 +13,7 @@
 						<?php echo get_field('homebuilder_introduction') ?>
 						
 						<a href="<?php echo get_field('homebuilder_page') ?>" title="<?php the_title() ?>">
-							<i class="fa fa-chevron-right blue-txt"></i> View Models
+							<i class="fa fa-chevron-right blue-txt"></i> View Floorplans
 						</a>
 					</article>
 				</div>

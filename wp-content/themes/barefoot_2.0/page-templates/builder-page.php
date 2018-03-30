@@ -76,7 +76,10 @@
 							
 							<img src="<?php echo $_logo['url'] ?>" alt="<?php the_title() ?>" width="<?php echo $w ?>" class="aligncenter img-responsive" />
 							<p class="blue-txt">Visit the <?php if($_builder != ''): echo $_builder; else: the_title(); endif; ?> sales office for more information and tour the models.</p>
-							<p class="address"><?php echo get_field('homebuilder_address') ?></p>
+							<p class="address">
+								<?php echo get_field('homebuilder_address') ?>
+								<?php echo get_field('homebuilder_phone') ?>
+							</p>
 							<span class="hours"><span class="blue-txt">SALES OFFICE HOURS</span><br /><?php echo get_field('homebuilder_hours') ?></span>
 							<p class="pricing">
 								<?php if($_portfolio != ''): echo $_portfolio; endif; ?><br />
@@ -87,7 +90,6 @@
 									<i class="fa fa-chevron-right"></i> Go To <?php if($_portfolio != ''): echo $_portfolio; else: the_title(); endif; ?>
 								</a>
 							<?php endif; ?>
-<!-- 								<button class="builder-btn"><i class="fa fa-chevron-right"></i> request information</button> -->
 						</div>
 					</div>
 				<?php endwhile; endif; ?>

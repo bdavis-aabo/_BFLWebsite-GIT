@@ -59,9 +59,8 @@
 						<div class="col-md-4">
 							<article class="explore-section">
 							<?php if($post->post_name == 'peninsula-park'): ?>
-								<button type="button" data-toggle="modal" data-target="#peninsula-video-modal">
-									<?php echo get_the_post_thumbnail($post->ID, 'full', array('class' => 'img-responsive aligncenter')); ?>
-								</button>
+								<?php echo get_the_post_thumbnail($post->ID, 'full', array('class' => 'img-responsive aligncenter', 'data-toggle' => 'modal', 'data-target' => '#peninsula-video-modal')); ?>
+								
 								<div class="modal fade" id="peninsula-video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 									<div class="modal-dialog" role="document">
 								    	<div class="modal-content">
