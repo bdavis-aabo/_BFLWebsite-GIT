@@ -1,13 +1,13 @@
 				<div class="col-md-4">
 					<div class="barefoot-right">
-						<a href="https://www.google.com/maps/dir//CalAtlantic+Homes+at+Barefoot+Lakes,+4772+Colorado+River+Dr,+Firestone,+CO+80504/@40.182116,-104.9686167,910m/data=!3m1!1e3!4m15!1m6!3m5!1s0x876c079f1dadf107:0x4702aa862de4b1ae!2sCalAtlantic+Homes+at+Barefoot+Lakes!8m2!3d40.182116!4d-104.966428!4m7!1m0!1m5!1m1!1s0x876c079f1dadf107:0x4702aa862de4b1ae!2m2!1d-104.966428!2d40.182116" title="get directions" target="_blank">
-							<img src="<?php bloginfo('template_directory') ?>/assets/images/runbarefoot-map.jpg" alt="get directions" class="img-responsive aligncenter" />
+						<a href="https://www.google.com/maps/dir//40.1824704,-104.9650145/@40.1823648,-104.9672426,938m/data=!3m2!1e3!4b1" title="get directions" target="_blank">
+							<img src="<?php bloginfo('template_directory') ?>/assets/images/driving-map2018.jpg" alt="get directions" class="img-responsive aligncenter" />
 						</a>
 						
 						<ul class="sidebar-links">
 							<li>
 								<a href="" data-toggle="modal" data-target="#map">
-									<img src="<?php bloginfo('template_directory') ?>/assets/images/runbarefoot-coursemap.jpg" alt="cour map" class="img-responsive aligncenter" />
+									<img src="<?php bloginfo('template_directory') ?>/assets/images/course-map2018.jpg" alt="cour map" class="img-responsive aligncenter" />
 								</a>
 							</li>
 <?php /*
