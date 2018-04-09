@@ -98,7 +98,7 @@ body {
 
 .builder-form { border: none; margin: 0; padding: 0; 
 	h2 { color: $lightblue; }
-	p  { font-family: 'brandon-regular', sans-serif; font-size: 1em; }
+	p  { font-family: 'brandon-regular', sans-serif; font-size: 1em; clear: both; }
 	
 	.form-group {
 		.row { margin-bottom: 12px; }
@@ -582,9 +582,6 @@ body {
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 375px) {
 	
-	
-	
-	
 	.homepage-promos {
 		.carousel { display: none; }
 	}
@@ -615,4 +612,20 @@ body {
 			}
 		}
 	}
+	
+	// Contact Form Mobile Styles
+	.modal-dialog { width: 95%; }
+	
+	
+	.builder-form { 
+		.form-group {
+			p { margin: 0; }
+			.checkbox-builder { margin: 0 0 8px; float: none;
+				label { font-size: 0.82em; }
+			}
+		}
+		
+	}
+	input[type=checkbox]:not(old) + label,
+		input[type=radio]:not(old) + label { margin-left: -2.5em; }
 }

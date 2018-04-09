@@ -8,7 +8,12 @@
 					</div>
 					
 					<div class="modal-body">
-						<?php echo do_shortcode('[contact-form-7 id="85" title="Builder Form"]') ?>
+						<div class="builder-form">
+							<h2>Let's see where our journeys take us.</h2>
+							<p>Fill out the form below to receive news about new homes and new opportunities at Barefoot Lakes.</p>
+							
+							<?php echo do_shortcode('[contact-form-7 id="85" title="Builder Form"]') ?>
+						</div>
 					</div>
 				</div>
 			</div>

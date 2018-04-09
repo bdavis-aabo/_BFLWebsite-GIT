@@ -260,7 +260,8 @@ select:-webkit-autofill:focus {
     color: #66cce8; }
   .builder-form p {
     font-family: 'brandon-regular', sans-serif;
-    font-size: 1em; }
+    font-size: 1em;
+    clear: both; }
   .builder-form .form-group .row {
     margin-bottom: 12px; }
   .builder-form .form-group label {
@@ -961,4 +962,16 @@ select:-webkit-autofill:focus {
     .footer .footer-right p.copyright .alignright {
       float: none;
       display: block;
-      margin: 0 auto 10px; } }
+      margin: 0 auto 10px; }
+  .modal-dialog {
+    width: 95%; }
+  .builder-form .form-group p {
+    margin: 0; }
+  .builder-form .form-group .checkbox-builder {
+    margin: 0 0 8px;
+    float: none; }
+    .builder-form .form-group .checkbox-builder label {
+      font-size: 0.82em; }
+  input[type=checkbox]:not(old) + label,
+  input[type=radio]:not(old) + label {
+    margin-left: -2.5em; } }
