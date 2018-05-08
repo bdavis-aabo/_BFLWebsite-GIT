@@ -51,8 +51,3 @@ function create_events(){
 		'has_archive'		=>	false,		
 	));
 }
-
-
-
-
-//wp_enqueue_style('child-style.min');
