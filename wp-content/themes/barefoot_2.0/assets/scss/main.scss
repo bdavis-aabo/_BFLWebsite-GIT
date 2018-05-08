@@ -102,7 +102,7 @@ body {
 	
 	.form-group {
 		.row { margin-bottom: 12px; }
-		label { color: $darkgray; font-family: 'brandon-regular', sans-serif; font-size: 0.9em;  
+		label { color: $darkgray; font-family: 'brandon-regular', sans-serif; font-size: 0.9em; font-weight: normal;
 			.red,
 			.required { color: $lightblue; }
 		}
@@ -220,6 +220,10 @@ body {
 			.blue-txt { color: $lightblue; }
 			&:hover   { color: $lightgray; }
 		}
+		
+	p {
+		a { color: $darkgray; }
+	}
 			
 	// Builder List
 	.builder-list {
@@ -298,6 +302,27 @@ body {
 	}
 }
 
+// Run Barefoot Lakes Styles
+.runbarefoot-contents { padding-top: 40px; padding-bottom: 40px;
+	.runbarefoot-left { color: $darkgray;
+		h1 	{ font-family: 'brandon-regular', sans-serif; color: $runblue; font-size: 2.75em; }
+		h2 	{ font-family: 'brandon-regular', sans-serif; color: $rungreen; font-size: 1.75em; margin-bottom: 25px; }
+		h3 	{ font-family: 'brandon-regular', sans-serif; color: $white; font-size: 1.5em; margin: 45px 15% 15px 0; padding: 10px 0 10px 25px; 
+			background: $runblue; }
+		p 	{ font-size: 1.05em; padding-right: 15%; 
+			a { color: $runteal; }
+		}
+		ul	{ margin-left: 25px; margin-bottom: 25px; }
+		
+		.register { color: $runblue; 
+			.register-btn { background: $rungreen; color: $runblue; font-family: 'brandon-regular', sans-serif; border-radius: 4px;
+				margin-right: 15px; 
+				&:hover { color: $white; }
+			}
+		}
+	}
+}
+
 
 // Contact Form Styles
 .pathfinder-form {
@@ -317,7 +342,7 @@ body {
 			background: $lightblue; }
 		input[type=checkbox]:not(old):checked + label > span > span { display: block; width: 1em; height: 1em; margin: 0; border: .0625em solid $lightblue; border-radius: .125em;
 			background: $lightblue; }
-		.normal-btn { font-size: 0.9em; }
+		.normal-btn { font-size: 1em; }
 	}
 }
 .pathfinder-sidebar {
@@ -587,7 +612,12 @@ body {
 	}
 	
 	.homepage-builders {
-		.builder { text-align: left; }
+		.builder { text-align: left; 
+			h1,p { font-size: 0.8em; }
+			p { line-height: 1.4em; 
+				em { padding-top: 5px; }
+			}
+		}
 	}
 	
 	// Page Styles

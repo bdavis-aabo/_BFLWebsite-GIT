@@ -66,8 +66,10 @@
 			$_slug = $_parent->post_name;
 		?>
 
-		<?php if(!is_page('become-a-pathfinder') && !is_front_page()): ?>
-			<button type="button" class="sliding-btn" data-toggle="modal" data-target="#promoModal"><i class="fa fa-envelope"></i> request information</button>
+		<?php if(!is_page('become-a-pathfinder') && !is_front_page() && !is_page('thank-you')): ?>
+			<button type="button" class="sliding-btn" data-toggle="modal" data-target="#promoModal" onclick="ga('send','event', 'Request Information', 'click', '<?php the_title() ?> - View Form');">
+				<i class="fa fa-envelope"></i> request information
+			</button>
 			
 			<?php get_template_part('homes/builder-lightbox') ?>
 		<?php endif; ?>

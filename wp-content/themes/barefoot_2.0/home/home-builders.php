@@ -7,7 +7,7 @@
 		<div class="container-fluid">
 			<div class="row">
 			<?php while($_builders->have_posts()): $_builders->the_post() ?>
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-sm-6 col-xs-6">
 					<article class="builder">
 						<?php echo get_the_post_thumbnail($post->ID, 'full', array('class' => 'img-responsive aligncenter')); ?>
 						<?php echo get_field('homebuilder_introduction') ?>

@@ -30,7 +30,8 @@ body {
 
 strong,
 .strong {
-  font-family: 'brandon-bold', sans-serif; }
+  font-family: 'brandon-bold', sans-serif;
+  font-weight: normal; }
 
 h1 {
   font-size: 2.25em; }

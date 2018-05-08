@@ -24,7 +24,7 @@ $black:			#000000;
 /*** BASE STYLES ***/
 body 	{ font: 15px/26px 'brandon-regular', sans-serif; color: $brown; }
 strong,
-.strong	{ font-family: 'brandon-bold', sans-serif; }
+.strong	{ font-family: 'brandon-bold', sans-serif; font-weight: normal; }
 h1		{ font-size: 2.25em; }
 h2		{ font-size: 2em; }
 h3		{ font-size: 1.75em; }

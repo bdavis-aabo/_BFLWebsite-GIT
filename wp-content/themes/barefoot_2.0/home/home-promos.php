@@ -19,7 +19,7 @@
 							
 						<div class="promo-btns">
 							<a href="<?php bloginfo('url') ?>/the-homes/quick-move-in-homes" title="<?php bloginfo('name') ?> - Quick Move-In Homes" class="btn default-btn">Available Homes</a>
-							<button type="button" class="btn outline-btn" data-toggle="modal" id="#<?php echo $_builderLabel['value'] . '-btn' ?>" data-target="#promoModal">Request Information</button>
+							<button type="button" class="btn outline-btn" data-toggle="modal" id="#<?php echo $_builderLabel['value'] . '-btn' ?>" data-target="#promoModal" onclick="ga('send','event', 'Homepage Promo', 'click', '<?php the_title() ?> - View Form');">Request Information</button>
 						</div>
 					</div>
 		    	</div>

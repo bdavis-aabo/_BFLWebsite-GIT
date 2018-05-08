@@ -267,7 +267,8 @@ select:-webkit-autofill:focus {
   .builder-form .form-group label {
     color: #53585a;
     font-family: 'brandon-regular', sans-serif;
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    font-weight: normal; }
     .builder-form .form-group label .red,
     .builder-form .form-group label .required {
       color: #66cce8; }
@@ -495,6 +496,9 @@ select:-webkit-autofill:focus {
   .page-contents a:hover {
     color: #abb1b3; }
 
+.page-contents p a {
+  color: #53585a; }
+
 .page-contents .builder-list .builder {
   text-align: left; }
   .page-contents .builder-list .builder .aligncenter {
@@ -626,6 +630,46 @@ select:-webkit-autofill:focus {
     font-size: 0.8em;
     color: #66cce8; }
 
+.runbarefoot-contents {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .runbarefoot-contents .runbarefoot-left {
+    color: #53585a; }
+    .runbarefoot-contents .runbarefoot-left h1 {
+      font-family: 'brandon-regular', sans-serif;
+      color: #053540;
+      font-size: 2.75em; }
+    .runbarefoot-contents .runbarefoot-left h2 {
+      font-family: 'brandon-regular', sans-serif;
+      color: #cbdb2a;
+      font-size: 1.75em;
+      margin-bottom: 25px; }
+    .runbarefoot-contents .runbarefoot-left h3 {
+      font-family: 'brandon-regular', sans-serif;
+      color: #ffffff;
+      font-size: 1.5em;
+      margin: 45px 15% 15px 0;
+      padding: 10px 0 10px 25px;
+      background: #053540; }
+    .runbarefoot-contents .runbarefoot-left p {
+      font-size: 1.05em;
+      padding-right: 15%; }
+      .runbarefoot-contents .runbarefoot-left p a {
+        color: #43c0b3; }
+    .runbarefoot-contents .runbarefoot-left ul {
+      margin-left: 25px;
+      margin-bottom: 25px; }
+    .runbarefoot-contents .runbarefoot-left .register {
+      color: #053540; }
+      .runbarefoot-contents .runbarefoot-left .register .register-btn {
+        background: #cbdb2a;
+        color: #053540;
+        font-family: 'brandon-regular', sans-serif;
+        border-radius: 4px;
+        margin-right: 15px; }
+        .runbarefoot-contents .runbarefoot-left .register .register-btn:hover {
+          color: #ffffff; }
+
 .pathfinder-form form .form-group label {
   font-family: 'brandon-regular', sans-serif;
   font-size: 0.9em;
@@ -672,7 +716,7 @@ select:-webkit-autofill:focus {
   background: #66cce8; }
 
 .pathfinder-form form .normal-btn {
-  font-size: 0.9em; }
+  font-size: 1em; }
 
 .pathfinder-sidebar .message-group p {
   font-size: 0.9em; }
@@ -948,6 +992,12 @@ select:-webkit-autofill:focus {
     display: none; }
   .homepage-builders .builder {
     text-align: left; }
+    .homepage-builders .builder h1, .homepage-builders .builder p {
+      font-size: 0.8em; }
+    .homepage-builders .builder p {
+      line-height: 1.4em; }
+      .homepage-builders .builder p em {
+        padding-top: 5px; }
   .homes-hero .hero-caption {
     bottom: 0; }
     .homes-hero .hero-caption .hero-title {
