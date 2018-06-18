@@ -9,7 +9,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<footer class="footer gray-bg">
 			<div class="container-fluid">
 				<div class="row">
@@ -19,12 +19,12 @@
 							<?php wp_nav_menu(array('menu'=>'footer-home', 'depth'=>1, 'container'=>false, 'menu_class'=>'footer-menu')); ?>
 						</div>
 					</div>
-					
+
 					<div class="col-md-1 col-sm-2 col-xs-2 footer-menus">
 						<strong>COMMUNITY</strong>
 						<?php wp_nav_menu(array('menu'=>'footer-community', 'depth'=>1, 'container'=>false, 'menu_class'=>'footer-menu')); ?>
 					</div>
-					
+
 					<div class="col-md-3"></div>
 					<div class="col-md-5 col-sm-12">
 						<div class="footer-right">
@@ -61,20 +61,35 @@
 			</div>
 		</footer>
 
-		<?php 
+		<?php
 			$_parent = get_post($post->post_parent, OBJECT);
 			$_slug = $_parent->post_name;
 		?>
+
+		<!-- page popup -->
+		<div class="page-mask"></div>
+		<div class="page-popup">
+			<button id="boxClose"><i class="fa fa-2x fa-times"></i></button>
+			<div class="popup-content">
+				<div class="runbarefoot-contents">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/barefoot-popheader.jpg" class="img-responsive aligncenter" />
+					<h1 class="popup-title">It's everything you've always wanted in a 5k & 10k</h1>
+					<h2 class="popup-subtitle">Plus an awesome after party and the grand opening of Peninsula Park.</h2>
+
+					<a href="<?php bloginfo('url') ?>/barefoot-lakes-5k-10k/" class="btn register-btn">Register Today</a>
+				</div>
+			</div>
+		</div>
+		<!-- /end page popup -->
 
 		<?php if(!is_page('become-a-pathfinder') && !is_front_page() && !is_page('thank-you') && !is_page('run-barefoot-lakes-5k')): ?>
 			<button type="button" class="sliding-btn" data-toggle="modal" data-target="#promoModal" onclick="ga('send','event', 'Request Information', 'click', '<?php the_title() ?> - View Form');">
 				<i class="fa fa-envelope"></i> request information
 			</button>
-			
 			<?php get_template_part('homes/builder-lightbox') ?>
 		<?php endif; ?>
 <!-- 		<a href="#page-top" class="scrollToTop"><span class="fa fa-chevron-up"></span></a> -->
-		
+
 		<?php wp_footer() ?>
    	</body>
 </html>

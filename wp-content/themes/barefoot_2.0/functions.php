@@ -10,9 +10,10 @@ add_action('wp_enqueue_scripts', 'barefoot_enqueue_styles', PHP_INT_MAX);
 
 if( !is_admin()){
 	function bfl_register_js(){
-		wp_register_script('jquery.main.min', get_stylesheet_directory_uri() . '/assets/js/main.min.js', 'jquery', '', true);
+		wp_enqueue_script('jquery.cookie.min', 'https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js', 'jquery', '', true);
+		wp_enqueue_script('jquery.main.min', get_stylesheet_directory_uri() . '/assets/js/main.min.js', 'jquery', '', true);
 	}
-	add_action('wp_enqueue_script','jquery.main.min', 11);
+	add_action('wp_enqueue_scripts','bfl_register_js', 11);
 }
 
 
@@ -48,6 +49,6 @@ function create_events(){
 		'supports'			=>	array('title','author','excerpt','thumbnail','custom-fields','order','page-attributes'),
 		'menu_position'		=>	20,
 		'menu_icon'			=>	'dashicons-tickets-alt',
-		'has_archive'		=>	false,		
+		'has_archive'		=>	false,
 	));
 }

@@ -67,10 +67,10 @@
 								<h2 class="event-title"><?php the_title() ?></h2>
 								<?php echo get_field('event_info') ?>
 								
-<!--
-								<a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="event-btn">
+								<?php if(get_field('event_page') != ''): ?>
+								<a href="<?php echo get_field('event_page') ?>" title="<?php the_title() ?>" class="event-btn">
 									<i class="fa fa-chevron-right"></i> Learn More</a>
--->
+								<?php endif; ?>
 							</div>
 						</article>
 					</div>

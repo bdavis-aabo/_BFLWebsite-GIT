@@ -2,7 +2,7 @@
 // Include Bootstrap NavWalker
 require_once('assets/_inc/wp_bootstrap_navwalker.php');
 
-	
+
 /* Remove Admin Bar from Frontend */
 add_action('after_setup_theme', 'remove_admin_bar');
 
@@ -23,7 +23,7 @@ if (function_exists('add_theme_support'))
     add_image_size('model-thumb', 120, 100, true);		// Model Thumbnail
     add_image_size('builder-thumb', 450, '', true);	// Builder Thumbnail
     add_image_size('builder-logo', 350, '', true);
-    
+
     // Enables post and comment RSS feed links to head
     add_theme_support('automatic-feed-links');
 }
@@ -38,20 +38,20 @@ endif;
 function wpt_register_js(){
 	if( !is_admin()){
 		wp_deregister_script('jquery');
-		
+
 	wp_register_script('jquery', '/bower_components/jquery/dist/jquery.min.js', 'jquery', '', true);
 	wp_register_script('jquery.bootstrap.min', '/bower_components/bootstrap/dist/js/bootstrap.min.js', 'jquery', '', true);
 	wp_register_script('jquery.easing.min', get_template_directory_uri() . '/assets/js/jquery.easing.min.js', 'jquery', '', true);
 	wp_register_script('jquery.scrolling.min', get_template_directory_uri() . '/assets/js/scrolling-nav.js', 'jquery', '', true);
 	wp_register_script('jquery.scripts.min', get_template_directory_uri() . '/assets/js/scripts.min.js', 'jquery', '', true);
-	wp_register_script('jquery.main.min', get_stylesheet_directory_uri() . '/assets/js/main.min.js', 'jquery', '', true);
-	
+	//wp_register_script('jquery.main.min', get_stylesheet_directory_uri() . '/assets/js/main.min.js', 'jquery', '', true);
+
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery.bootstrap.min');
 	wp_enqueue_script('jquery.easing.min');
 	wp_enqueue_script('jquery.scrolling.min');
 	wp_enqueue_script('jquery.scripts.min');
-	wp_enqueue_script('jquery.main.min');
+	//wp_enqueue_script('jquery.main.min');
 	}
 }
 
@@ -67,16 +67,16 @@ function wpt_register_css(){
 add_action('init','wpt_register_js');
 add_action('wp_enqueue_scripts', 'wpt_register_css');
 
-// Add Class to Images posted on pages 
+// Add Class to Images posted on pages
 function add_responsive_class($content){
 	$content = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
 	$document = new DOMDocument();
 	libxml_use_internal_errors(true);
-	
+
 	if($content != ''){
 	$document->loadHTML(utf8_decode($content));
 	}
-	
+
 	$imgs = $document->getElementsByTagName('img');
 	foreach($imgs as $img){
 		$existing_class = $img->getAttribute('class');
@@ -156,23 +156,6 @@ function is_child($_pageID){
 	if(is_page() && ($post->post_parent == $_pageID)){
 		return true;
 	} else {
-		return false; 
+		return false;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

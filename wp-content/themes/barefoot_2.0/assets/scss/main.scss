@@ -1,21 +1,21 @@
 @import 'design';
 
 /*** BASICS ***/
-body { 
-	
+body {
+
 }
 //h1,h2,h3,h4,h5,h6 { color: $lightblue; }
 
 .nopadding { padding: 0 !important; }
 
 /*** NAVIGATION / HEADER ***/
-.navbar-default { 
+.navbar-default {
 	.navbar-left {
 		img { padding: 15px 0; }
 	}
 	.navbar-nav { margin-top: 15px; position: relative; bottom: -14px; font-size: 24px;
 		li {
-			a { padding: 23px 30px 22px; cursor: pointer; 
+			a { padding: 23px 30px 22px; cursor: pointer;
 				&:focus {  }
 				&:hover { color: $lightblue; }
 				.fa { font-size: 0.55em; position: relative; bottom: 4px; }
@@ -24,11 +24,11 @@ body {
 				a { /* color: $lightblue; */ }
 			}
 			&.active {
-				a { color: $lightblue !important; background: none; 
+				a { color: $lightblue !important; background: none;
 					&:hover { background: none; }
 				}
 			}
-			&.current-menu-parent { 
+			&.current-menu-parent {
 				a { color: $lightblue; }
 				li {
 					a { color: $white; }
@@ -47,15 +47,15 @@ body {
 }
 
 /*** HOMEPAGE BUILDERS ***/
-.homepage-builders { padding: 20px 0; 
-	.builder { text-align: left; 
+.homepage-builders { padding: 20px 0;
+	.builder { text-align: left;
 		.aligncenter { margin-bottom: 15px; }
 		h1 { font-size: 1.3em; margin: 0; }
 		p { margin-bottom: 5px;
 			strong { font-weight: normal; text-transform: uppercase; font-family: 'brandon-regular', sans-serif; }
 			em { font-family: 'brandon-bold', sans-serif; color: $lightgray; text-transform: uppercase; font-style: normal; }
 		}
-		a { color: $darkgray; text-transform: uppercase; font-size: 0.9em; 
+		a { color: $darkgray; text-transform: uppercase; font-size: 0.9em;
 			.blue-txt { color: $lightblue; }
 			&:hover   { color: $lightgray; }
 		}
@@ -73,33 +73,33 @@ body {
 	.carousel-caption { width: 35%; bottom: 18%; padding-top: 0; padding-bottom: 0; font-family: 'dense-regular', sans-serif; text-shadow: none;
 		&.left  { text-align: left; right: auto; left: 2.5%; }
 		&.right { text-align: right; right: 2.5%; left: auto; }
-		&.light { color: $white; 
+		&.light { color: $white;
 			.default-btn { background: $white; color: $darkgray; }
 			.outline-btn { background: transparent; color: $white; border: 1px solid $white; }
 		}
-		&.dark  { color: $darkgray; 
+		&.dark  { color: $darkgray;
 			.default-btn { background: $darkgray; color: $white; }
 			.outline-btn { background: rgba(255,255,255,0.6); color: $darkgray; border: 1px solid $darkgray; }
 			a { color: $darkgray; }
 		}
 		.promo-title { font-size: 7.25em; line-height: 0.8em; margin: 0 0 12px; font-family: 'dense-regular', sans-serif; }
 		p { font-size: 1.5em; line-height: 1.25em; font-weight: lighter; }
-		a { text-transform: uppercase; font-size: 1.5em; color: $white; 
+		a { text-transform: uppercase; font-size: 1.5em; color: $white;
 			.fa { font-size: 0.7em; color: $lightblue; position: relative; top: -2px; padding-right: 4px; }
 		}
-		.promo-btns { margin-top: 15px; 
+		.promo-btns { margin-top: 15px;
 			.btn { border-radius: 0; font-family: 'dense-regular', sans-serif; font-size: 1.5em; padding-left: 25px; padding-right: 25px; margin-left: 10px;
 				&:hover { opacity: 0.5; }
 			}
 		}
 	}
-	
+
 }
 
-.builder-form { border: none; margin: 0; padding: 0; 
+.builder-form { border: none; margin: 0; padding: 0;
 	h2 { color: $lightblue; }
 	p  { font-family: 'brandon-regular', sans-serif; font-size: 1em; clear: both; }
-	
+
 	.form-group {
 		.row { margin-bottom: 12px; }
 		label { color: $darkgray; font-family: 'brandon-regular', sans-serif; font-size: 0.9em; font-weight: normal;
@@ -114,13 +114,13 @@ body {
 	input[type=checkbox]:not(old):checked + label > span > span { display: block; width: 1em; height: 1em; margin: 0; border: .0625em solid $lightblue; border-radius: .125em;
 		background: $lightblue; }
 	.normal-btn { font-size: 1.2em; }
-	.required-text { text-transform: uppercase; font-size: 0.95em; 
+	.required-text { text-transform: uppercase; font-size: 0.95em;
 		.red { color: $lightblue; }
 	}
 }
 
 /*** BUILDER PAGES ***/
-.page-hero { 
+.page-hero {
 	.hero-caption { left: 15px; right: auto; }
 	.builder-caption { text-align: left; }
 }
@@ -152,10 +152,10 @@ body {
 					&:hover, &.active {
 						.thumb-mask { opacity: 0; }
 					}
-					
+
 				}
 			}
-			.carousel-caption { text-align: left; padding-left: 15px; left: 0%; right: 0; bottom: 0; padding-bottom: 20px; line-height: 1.45em; text-shadow: none; 
+			.carousel-caption { text-align: left; padding-left: 15px; left: 0%; right: 0; bottom: 0; padding-bottom: 20px; line-height: 1.45em; text-shadow: none;
 				background: rgba(13,12,12,0.88); /* Old browsers */
 				background: -moz-linear-gradient(top,  hsla(0,5%,5%,0) 0%, hsla(0,5%,5%,0.88) 80%); /* FF3.6-15 */
 				background: -webkit-linear-gradient(top,  hsla(0,5%,5%,0) 0%,hsla(0,5%,5%,0.88) 80%); /* Chrome10-25,Safari5.1-6 */
@@ -170,17 +170,17 @@ body {
 	}
 	.homebuilder-sidebar { padding-left: 4%; padding-right: 4%; // background: yellow;
 		.blue-txt { color: $lightblue; }
-		.hours { 
+		.hours {
 			.blue-txt { color: $darkgray; font-family: 'brandon-medium', sans-serif; }
 		}
 		.pricing { color: $lightgray; }
 		.builder-btn { color: $darkgray; text-transform: uppercase;
 			.fa { color: $lightblue; position: relative; top: -0px; font-size: 0.8em; }
 			&:hover { color: $lightgray; }
-		}	
+		}
 	}
 }
-.homebuilder-contents { 
+.homebuilder-contents {
 	h2 { color: $lightblue; }
 }
 
@@ -192,7 +192,7 @@ body {
 	.builder-homes {
 		.builder-home { font-size: 0.9em; line-height: 1.45em; text-align: center;
 			strong { text-transform: uppercase; font-family: 'brandon-medium', sans-serif; font-weight: normal; font-size: 1.1em; color: $lightblue; }
-			.address-price { font-family: 'brandon-medium', sans-serif; color: $darkgray; 
+			.address-price { font-family: 'brandon-medium', sans-serif; color: $darkgray;
 				strong { color: $lightgray; }
 			}
 			.builder-btn { color: $darkgray; text-transform: uppercase;
@@ -205,35 +205,35 @@ body {
 
 /*** SUBPAGES ***/
 .homes-hero { position: relative;
-	.hero-caption { position: absolute; text-align: right; bottom: 15px; right: 15px !important; left: auto !important; 
+	.hero-caption { position: absolute; text-align: right; bottom: 15px; right: 15px !important; left: auto !important;
 		.hero-title { font-family: 'dense-regular', sans-serif; font-size: 6em; color: #ffffff; }
 	}
 }
 
-.page-contents { 
+.page-contents {
 	.page-title,
 	.page-subtitle { color: $lightblue; }
 	.page-subtitle { font-size: 1.65em; text-align: left; }
-	
+
 	a { color: $lightblue; text-transform: uppercase; font-size: 1em;
 			.fa { font-size: 0.8em; color: $lightblue; }
 			.blue-txt { color: $lightblue; }
 			&:hover   { color: $lightgray; }
 		}
-		
+
 	p {
 		a { color: $darkgray; }
 	}
-			
+
 	// Builder List
 	.builder-list {
-		.builder { text-align: left; 
+		.builder { text-align: left;
 			.aligncenter { margin-bottom: 15px; }
 			h1 { font-size: 1.18em; margin: 0; }
 			p { margin-bottom: 5px;
 				strong { font-weight: normal; text-transform: uppercase; font-family: 'brandon-regular', sans-serif; }
 				em { font-family: 'brandon-bold', sans-serif; color: $lightgray; text-transform: uppercase; font-style: normal; }
-			
+
 				&.builder-hours { font-size: 0.9em; line-height: 1.25em; text-align: left; }
 			}
 			a { color: $darkgray; text-transform: uppercase; font-size: 1em;
@@ -243,12 +243,12 @@ body {
 			}
 		}
 	}
-	
+
 	.quickmove-table {
 		.builder-header {
-			.builder-description { padding-top: 15px; 
+			.builder-description { padding-top: 15px;
 				.builder-name { font-size: 1.1em; }
-				span { font-size: 0.9em; 
+				span { font-size: 0.9em;
 					&.phone { color: $lightgray; }
 				}
 			}
@@ -256,7 +256,7 @@ body {
 		.builder-homes {
 			.builder-home { font-size: 0.9em; line-height: 1.45em; text-align: center;
 				strong { font-size: 1.1em; text-transform: uppercase; font-family: 'brandon-medium', sans-serif; font-weight: normal; color: $lightblue; }
-				.address-price { font-family: 'brandon-medium', sans-serif; color: $darkgray; 
+				.address-price { font-family: 'brandon-medium', sans-serif; color: $darkgray;
 					strong { color: $lightgray; font-size: 0.9em; }
 				}
 				.builder-btn { color: $darkgray; text-transform: uppercase;
@@ -285,16 +285,16 @@ body {
 	.offer-row { margin-bottom: 40px; }
 	.offer-graphic { position: relative;
 		.offer-title { position: absolute; font-family: 'dense', sans-serif; font-size: 2.2em; bottom: 10px; margin: 0; }
-		&.right { text-align: right; 
+		&.right { text-align: right;
 			.offer-title { right: 10px; }
 		}
-		&.left  { text-align: left; 
+		&.left  { text-align: left;
 			.offer-title { left: 10px; }
 		}
 		&.light { color: $white; }
 		&.dark	{ color: $darkgray; }
 	}
-	.offer-details { 
+	.offer-details {
 		.offer-title { color: $lightblue; font-size: 1.5em; margin-top: 10px; }
 		.builder-btn { color: $darkgray; font-family: 'brandon-regular', sans-serif; font-size: 1em; padding-left: 0;
 			.fa { font-size: 0.8em; color: $lightblue; }
@@ -307,26 +307,41 @@ body {
 	.runbarefoot-left { color: $darkgray;
 		h1 	{ font-family: 'brandon-regular', sans-serif; color: $runblue; font-size: 2.75em; }
 		h2 	{ font-family: 'brandon-regular', sans-serif; color: $runteal; font-size: 1.75em; margin-bottom: 25px; }
-		h3 	{ font-family: 'brandon-regular', sans-serif; color: $white; font-size: 1.5em; margin: 60px 15% 15px 0; padding: 10px 0 10px 25px; 
+		h3 	{ font-family: 'brandon-regular', sans-serif; color: $white; font-size: 1.5em; margin: 60px 15% 15px 0; padding: 10px 0 10px 25px;
 			background: $runblue; }
-		p 	{ font-size: 1.05em; padding-right: 15%; 
+		p 	{ font-size: 1.05em; padding-right: 15%;
 			a { color: $runteal; }
 		}
 		ul	{ margin-left: 25px; margin-bottom: 25px; }
-		
-		.register { color: $runblue; 
-			.register-btn { background: $rungreen; color: $runblue; font-family: 'brandon-regular', sans-serif; border-radius: 4px; margin-right: 15px; 
+
+		.register { color: $runblue;
+			.register-btn { background: $rungreen; color: $runblue; font-family: 'brandon-regular', sans-serif; border-radius: 4px; margin-right: 15px;
 				&:hover { color: $white; }
 			}
 		}
 	}
-	.runbarefoot-sidebar { padding-top: 110px; 
+	.runbarefoot-sidebar { padding-top: 110px;
 		.sidebar-title { font-family: 'brandon-regular', sans-serif; font-size: 1.5em; color: $runblue; }
 	}
-	
+
 	.register-btn { background: $rungreen; color: $runblue; font-family: 'brandon-regular', sans-serif; border-radius: 4px; margin-right: 15px; margin-bottom: 15px;
 		&:hover { color: $white; }
 	}
+}
+
+// Promotional popup window
+.page-mask { position: fixed; width: 100%; height: 100%; z-index: 1000; left: 0; top: 0; background: $black; opacity: 0;
+	transition: opacity 1000ms cubic-bezier(.215,.61,.355,1); display: none;
+	&.show { opacity: 0.8; display: block; }
+}
+.page-popup { position: fixed; width: 80%; z-index: 1001; background: $white; opacity: 0;
+	transition: opacity 1000ms cubic-bezier(.215,.61,.355,1); border-radius: 4px; box-shadow: 0 0 8px rgba(0,0,0,0.4); border: 1px solid $ltgray;
+	text-align: center; display: none;
+	&.visible { opacity: 1; display: block; }
+	#boxClose { position: absolute; right: 15px; top: 10px; }
+	h1, h2 { font-family: 'brandon-regular', sans-serif; }
+	.popup-title { color: $runblue; font-size: 2em; }
+	.popup-subtitle { color: $runteal; font-size: 1.5em; margin-bottom: 20px; }
 }
 
 
@@ -335,7 +350,7 @@ body {
 	form {
 		.form-group {
 			label { font-family: 'brandon-regular', sans-serif; font-size: 0.9em; text-transform: uppercase; }
-			&.left .one-half { width: 48%; float: right; 
+			&.left .one-half { width: 48%; float: right;
 				&.alpha { float: left; }
 			}
 			.one-four {
@@ -359,11 +374,11 @@ body {
 
 // Explore
 .explore-sections {
-	.explore-section, 
+	.explore-section,
 	.explore-field-guide { text-align: center; padding-left: 5px; padding-right: 5px; margin-bottom: 25px;
 		.explore-title { font-size: 1.3em; color: $lightblue; }
 		p { font-size: .9em; line-height: 1.4em; }
-		a { color: $lightblue !important; 
+		a { color: $lightblue !important;
 			.fa { color: $lightblue; }
 		}
 	}
@@ -373,38 +388,38 @@ body {
 }
 
 /*** FOOTER ***/
-.footer-quicklinks { padding: 20px 0; text-align: center; 
+.footer-quicklinks { padding: 20px 0; text-align: center;
 	.col-md-3 { padding-top: 25px; padding-bottom: 25px; border-right: 1px solid $darkgray;
 		&:last-child { border-right: none; }
 	}
-	a { color: $darkgray; display: block;  text-transform: uppercase; font-family: 'brandon-bold', sans-serif; 
+	a { color: $darkgray; display: block;  text-transform: uppercase; font-family: 'brandon-bold', sans-serif;
 		.fa { padding-right: 5px; }
 		&:hover { color: $lightgray; }
 	}
 }
-.footer { padding-top: 30px; padding-bottom: 50px; 
+.footer { padding-top: 30px; padding-bottom: 50px;
 	strong { font-family: 'brandon-regular', sans-serif; color: $darkgray; }
-	ul { list-style: none; 
-		&.footer-menu { text-transform: lowercase; font-size: 0.9em; 
-			a { color: $darkgray; 
+	ul { list-style: none;
+		&.footer-menu { text-transform: lowercase; font-size: 0.9em;
+			a { color: $darkgray;
 				&:hover { color: $white; }
 			}
 		}
 	}
 	.home-menu { margin: 0 auto; padding-left: 20px; }
-	
+
 	.footer-right {
-		p { clear: both; text-align: right; 
+		p { clear: both; text-align: right;
 			&.directions { font-size: 0.9em; line-height: 1.15em; }
-			&.copyright  { font-size: 0.8em; margin: 0 0 10px; line-height: 1.25em; 
-				a { color: $darkgray; 
+			&.copyright  { font-size: 0.8em; margin: 0 0 10px; line-height: 1.25em;
+				a { color: $darkgray;
 					&:hover { color: $white; }
 				}
 			}
 		}
-		.footer-social { text-align: right; width: 100%; clear: both; 
-			li { display: inline-block; margin-left: 0; 
-				a { color: $darkgray; 
+		.footer-social { text-align: right; width: 100%; clear: both;
+			li { display: inline-block; margin-left: 0;
+				a { color: $darkgray;
 					&:hover { color: $lightgray; }
 				}
 			}
@@ -413,13 +428,13 @@ body {
 }
 
 /*** MODAL STYLES ***/
-.modal { background: rgba(0,0,0,0.5); 
-	.modal-dialog { top: 10%; 
+.modal { background: rgba(0,0,0,0.5);
+	.modal-dialog { top: 10%;
 		.modal-header {
 			h4 { color: $lightblue; text-align: left; }
 		}
 		.modal-body {
-			
+
 		}
 	}
 }
@@ -427,13 +442,13 @@ body {
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-	
+
 }
 
 /* Tablets (iPad Landscape) */
 @media only screen and (max-width : 1024px) {
 	//Navbar
-	.navbar-default { min-height: 90px; 
+	.navbar-default { min-height: 90px;
 		.navbar-left {
 			img { padding: 15px 0; }
 		}
@@ -448,7 +463,7 @@ body {
 			}
 		}
 	}
-	
+
 	//Homepage
 	.homepage-builders {
 		.builder {
@@ -457,23 +472,23 @@ body {
 		}
 	}
 	.homepage-promos {
-		.carousel-caption { width: 50%; 
+		.carousel-caption { width: 50%;
 			.promo-title { font-size: 5em; }
 		}
 		.carousel-controls { top: 85%; }
 	}
-	
+
 	//Homebuilder Details
 	.homebuilder-section {
 		.homebuilder-sidebar {
 			.blue-text { font-size: 0.9em; }
 			.hours { font-size: 0.9em; }
 			.pricing { font-size: 1em; }
-			
+
 			.normal-btn { font-family: 'brandon-regular', sans-serif; }
 		}
 	}
-	
+
 	//Page Styles
 	.page-contents {
 		.builder-list {
@@ -484,15 +499,15 @@ body {
 			}
 		}
 	}
-	
+
 	// Explore
 	.explore-sections {
-		.explore-section, 
+		.explore-section,
 		.explore-field-guide { text-align: center; padding-left: 5px; padding-right: 5px; margin-bottom: 25px;
 			.explore-title { font-size: 1.1em; color: $lightblue; }
 			p { font-size: .9em; line-height: 1.4em; }
 /*
-			a { text-transform: uppercase; color: $darkgray; 
+			a { text-transform: uppercase; color: $darkgray;
 				.fa { color: $lightblue; }
 			}
 */
@@ -514,34 +529,34 @@ body {
 	.navbar-toggle  { margin-top: 30px; }
 	.navbar-default {
 		.navbar-collapse { border: none; }
-		.navbar-nav { margin-top: 0; bottom: 0; 
-			.dropdown-menu { top: 50px; 
+		.navbar-nav { margin-top: 0; bottom: 0;
+			.dropdown-menu { top: 50px;
 				li {
 					a { color: $white !important; }
 				}
 			}
 		}
 	}
-	
+
 	// Homepage
 	.homepage-promos {
-		.carousel-caption { width: 50%; 
+		.carousel-caption { width: 50%;
 			.promo-title { font-size: 3em; }
 			p { font-size: 1em; }
 		}
 		.carousel-controls { top: 80%; }
 	}
-	
+
 	//Homebuilder Details
 	.homebuilder-section {
 		.homebuilder-sidebar { margin-top: 30px; }
 	}
-	.homebuilder-qmis { 
+	.homebuilder-qmis {
 		.builder-homes {
 			.builder-home { margin-bottom: 20px; }
 		}
 	}
-	
+
 	//Page Styles
 	.page-contents {
 		.builder-list {
@@ -552,34 +567,34 @@ body {
 			}
 		}
 	}
-	
-	
+
+
 	.footer-quicklinks {
 		a { font-size: 0.9em; }
 	}
 	.footer-right { padding-top: 30px;}
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 667px) {
 	.navbar-left { display: block; width: 300px; margin-left: 15px; }
-	
+
 	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse { max-height: 100%; }
-	.navbar { background: $black; 
+	.navbar { background: $black;
 		&.navbar-default { min-height: auto; }
 		.navbar-toggle { margin-top: 25px; }
 		.navbar-left { width: 250px; }
-		
-		.navbar-nav { text-align: left; position: auto; 
+
+		.navbar-nav { text-align: left; position: auto;
 			li { display: block; }
 		}
 		.navbar-collapse {  }
 	}
-	
+
 	//Homepage
 	.homepage-hero { margin-top: 80px; }
 	.homepage-promos {
-		.carousel-caption { width: 50%; 
+		.carousel-caption { width: 50%;
 			.promo-title { font-size: 2em; }
 			p { font-size: 1em; }
 			.promo-btns {
@@ -592,7 +607,7 @@ body {
 	.homepage-builders {
 		.builder { text-align: center; }
 	}
-	
+
 	//The Homes
 	.homes-hero { margin-top: 60px; }
 	.page-contents {
@@ -600,35 +615,35 @@ body {
 			.builder { text-align: center; }
 		}
 	}
-	
+
 	.footer-quicklinks {
 		a { font-size: 0.8em; }
 	}
 	.footer {
-		.col-sm-12 { clear: both; 
+		.col-sm-12 { clear: both;
 		}
 	}
 }
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (max-width : 375px) {
-	
+
 	.homepage-promos {
 		.carousel { display: none; }
 	}
-	
+
 	.homepage-builders {
-		.builder { text-align: left; 
+		.builder { text-align: left;
 			h1,p { font-size: 0.8em; }
-			p { line-height: 1.4em; 
+			p { line-height: 1.4em;
 				em { padding-top: 5px; }
 			}
 		}
 	}
-	
+
 	// Page Styles
 	.homes-hero {
-		.hero-caption { bottom: 0; 
+		.hero-caption { bottom: 0;
 			.hero-title { font-size: 4em; }
 		}
 	}
@@ -637,10 +652,10 @@ body {
 			.builder { text-align: left; }
 		}
 	}
-	
+
 	.footer-quicklinks,
 	.footer-menus { display: none; }
-	
+
 	.footer {
 		.footer-right {
 			p.copyright { text-align: center;
@@ -648,19 +663,19 @@ body {
 			}
 		}
 	}
-	
+
 	// Contact Form Mobile Styles
 	.modal-dialog { width: 95%; }
-	
-	
-	.builder-form { 
+
+
+	.builder-form {
 		.form-group {
 			p { margin: 0; }
 			.checkbox-builder { margin: 0 0 8px; float: none;
 				label { font-size: 0.82em; }
 			}
 		}
-		
+
 	}
 	input[type=checkbox]:not(old) + label,
 		input[type=radio]:not(old) + label { margin-left: -2.5em; }
